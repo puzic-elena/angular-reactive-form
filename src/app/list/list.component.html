@@ -1,0 +1,18 @@
+<div class="mat-form-field-wrapper">
+  <div
+    *ngFor="let user of submittedUsers"
+  >
+    <div>
+      <p>Name:</p>
+      <div>{{ user.name }}</div>
+    </div>
+    <div>
+      <p>Age:</p>
+      <div>{{ user.age }}</div>
+    </div>
+    <div>
+      <p>Email:</p>
+      <div>{{ user.email }}</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <form
+      [formGroup]="myForm"
+      (ngSubmit)="submitHandler()"
+      class="d-flex flex-column col-md-6"
+    >
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="name"
+          type="text"
+          formControlName="name"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="age"
+          type="text"
+          formControlName="age"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="email"
+          type="email"
+          formControlName="email"
+        />
+      </mat-form-field>
+      <button mat-flat-button color="#1a73e8" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
